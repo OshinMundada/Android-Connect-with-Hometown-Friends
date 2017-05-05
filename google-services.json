@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1006641026339",
+    "firebase_url": "https://connecthometown.firebaseio.com",
+    "project_id": "connecthometown",
+    "storage_bucket": "connecthometown.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006641026339:android:7c66b2d0f99e20bd",
+        "android_client_info": {
+          "package_name": "com.example.oshinmundada.connecthometown"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006641026339-nue3jic18prlfa2e5s31ugsa86srj5gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oshinmundada.connecthometown",
+            "certificate_hash": "af296d7aff80ff95dc0aab5f70682abe6abaf3c4"
+          }
+        },
+        {
+          "client_id": "1006641026339-1mo57u6hoflccqjjs5ugo93titc8ba80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUkLfpOeIdN1-P8BusLZYz7i9-2O2nzZA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006641026339-1mo57u6hoflccqjjs5ugo93titc8ba80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

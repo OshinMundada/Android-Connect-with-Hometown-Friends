@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:background="@color/bgcolor"
+    android:shrinkColumns="0">
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/nickname"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/nickname_input"
+            android:padding="15dip"
+            android:gravity="left"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:textAlignment="gravity"
+            android:hint="@string/nickname"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/email_input"
+            android:imeOptions="actionNext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/email"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/email_input"
+            android:padding="15dip"
+            android:gravity="left"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:textAlignment="gravity"
+            android:hint="@string/emailHint"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/password_input"
+            android:imeOptions="actionNext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/password"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:padding="15dip"
+            android:gravity="left"
+            android:hint="@string/password"
+            android:textAlignment="gravity"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/country_input"
+            android:imeOptions="actionNext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:inputType="textPassword"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/country"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/country_input"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/country"
+            android:nextFocusForward="@+id/state_input"
+            android:imeOptions="actionNext"
+            />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/state"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+        <Spinner
+            android:id="@+id/state_input"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/state"
+            android:nextFocusForward="@+id/city_input"
+            android:imeOptions="actionNext"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/city"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/city_input"
+            android:padding="15dip"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:hint="@string/city"
+            android:nextFocusForward="@+id/year_input"
+            android:imeOptions="actionNext"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="15dip"
+            android:text="@string/year"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/year_input"
+            android:padding="15dip"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/year"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:nextFocusForward="@+id/latitude_display_label"
+            android:imeOptions="actionNext"
+            android:textSize="17sp"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/latitude_display_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/longitude_display_label"
+            android:padding="15dip"
+            android:hint="@string/latitude"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/longitude_display_label"
+            android:padding="15dip"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/longitude"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/setmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set"
+            android:background="@color/butcolor"
+            android:onClick="onClick"/>
+
+    </TableRow>
+    <TableRow
+        android:paddingTop="40dp"
+        android:paddingBottom="25dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="onClick"
+            android:text="@string/submit"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:textColor="#fff"
+            android:background="@color/butcolor"
+            android:layout_marginLeft="300dp"/>
+    </TableRow>
+</TableLayout>

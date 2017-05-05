@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Connect with Hometowners</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="year">Year</string>
+    <string name="set">Set Location</string>
+    <string name="nickname">Nickname</string>
+    <string name="password">Password</string>
+    <string name="city">City</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="submit">Submit</string>
+    <string name="addUser">Add new user</string>
+    <string name="displayList">Contacts</string>
+    <string name="displayMap">Location on Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_set_map_location">Map</string>
+    <string name="title_activity_set_location_map">Map</string>
+    <string name="title_activity_delete_map">Map</string>
+    <string name="title_activity_delete1">Map</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="minimum_password">Password should be of length 6 at least!</string>
+    <string name="email">Email</string>
+    <string name="emailHint">abc@xyz.com</string>
+    <string name="title_activity_map_view_display">Map</string>
+</resources>

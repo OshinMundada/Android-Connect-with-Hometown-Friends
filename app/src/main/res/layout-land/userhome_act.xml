@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:background="@color/bgcolor"
+    android:orientation="horizontal" >
+    <FrameLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <ListView
+            android:id="@+id/optionsList"
+            android:layout_height="wrap_content"
+            android:layout_width="256dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+        </ListView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/option"
+        android:layout_width="951dp"
+        android:layout_height="747dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2.18">
+        <FrameLayout
+            android:id="@+id/option_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/userHomeText"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

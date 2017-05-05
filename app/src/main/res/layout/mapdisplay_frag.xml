@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:paddingTop="10dp"
+    android:weightSum="1">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15">
+        <Spinner
+            android:id="@+id/country_filter"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:prompt="@string/country"/>
+        <Spinner
+            android:id="@+id/state_filter"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:prompt="@string/state"/>
+        <EditText
+            android:id="@+id/year_input"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Year"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layout_width="0dp"/>
+        <Button
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@color/butcolor"
+            android:text="More" />
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.maps.MapView android:layout_width="match_parent" android:layout_height="550dp" android:id="@+id/map"/>
+
+</LinearLayout>
